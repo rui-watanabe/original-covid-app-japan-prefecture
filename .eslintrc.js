@@ -48,5 +48,6 @@ module.exports = {
       'error',
       { props: true, ignorePropertyModificationsForRegex: ['state'] },
     ],
+    '@typescript-eslint/no-var-requires': 0,
   },
 };

@@ -1,0 +1,24 @@
+{
+  "date": "2021年3月31日",
+  "hospitalize": {
+    "normal": 0,
+    "limit": 0,
+    "stopped": 0,
+    "unintroduced": 0,
+    "unanswered": 0
+  },
+  "outPatient": {
+    "normal": 0,
+    "limit": 0,
+    "stopped": 0,
+    "unintroduced": 0,
+    "unanswered": 0
+  },
+  "emergency": {
+    "normal": 0,
+    "limit": 0,
+    "stopped": 0,
+    "unintroduced": 0,
+    "unanswered": 0
+  }
+}
