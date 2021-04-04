@@ -9,15 +9,9 @@ import {
 } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './DashBoard.module.css';
-import {
-  fetchAsyncGetData,
-  fetchAsyncGetLatestData,
-  selectCurrentCategoryFlg,
-  selectCurrentData,
-} from '../covidSlice';
-import SwitchCategory from '../SwitchCategory/SwitchCategory';
-import Chart from '../Chart/Chart';
-import Cards from '../Cards/Cards';
+import { fetchAsyncData, selectData } from '../covidSlice';
+import PieChart from '../PieChart/PieChart';
+import SwitchPrefecture from '../SwitchPrefecture/SwitchPrefecure';
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -29,39 +23,38 @@ const useStyles = makeStyles(() => ({
 const DashBoard: React.FC = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const currentDataList = useSelector(selectCurrentData);
-  const categoryFlg = useSelector(selectCurrentCategoryFlg);
-  const loadDate = new Date(
-    currentDataList[currentDataList.length - 1].date
-  ).toLocaleDateString();
+  const data = useSelector(selectData);
+  const daily = data.date;
 
   useEffect(() => {
-    dispatch(fetchAsyncGetData('positive-cases'));
-    dispatch(fetchAsyncGetLatestData());
+    dispatch(fetchAsyncData());
   }, [dispatch]);
 
   return (
     <div>
-      <AppBar position="absolute" color="default">
+      <AppBar position="absolute" color="secondary">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            全国コロナ感染者 ライブダッシュボード
+            全国医療提供体制状況
           </Typography>
           <div>
-            <Typography variant="body1">
-              {loadDate}
-              更新
-            </Typography>
+            <Typography variant="body1">{daily}更新</Typography>
           </div>
         </Toolbar>
       </AppBar>
       <Container className={classes.content}>
         <div className={styles.container}>
-          <SwitchCategory loadDate={loadDate} />
+          <SwitchPrefecture />
         </div>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={12}>
-            {categoryFlg === 1 ? <Chart /> : <Cards />}
+        <Grid container spacing={3} alignItems="center" justify="center">
+          <Grid item xs={12} md={5}>
+            <PieChart pieType="hospitalize" />
+          </Grid>
+          <Grid item xs={12} md={5}>
+            <PieChart pieType="outputPatient" />
+          </Grid>
+          <Grid item xs={12} md={5}>
+            <PieChart pieType="emergency" />
           </Grid>
         </Grid>
       </Container>

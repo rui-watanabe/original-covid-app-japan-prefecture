@@ -1,104 +1,117 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { RootState } from '../../app/store';
-import dataObject from './dataObject.json';
-import categoriesObject from './categoriesObject.json';
-import dataLatestObject from './dataLatestObject.json';
+import prefectureApiData from './prefectureApiData.json';
+import prefectureData from './prefectureData.json';
 
-const apiUrl = 'https://api.opendata.go.jp/mhlw';
-
-type covidDataObject = typeof dataObject;
-type categoriesObjectType = typeof categoriesObject;
-type covidDataLatestObject = typeof dataLatestObject;
-
-export type categoriesType = keyof categoriesObjectType;
-
-type latestDataState = {
-  eachCategory: categoriesType;
-  latestCount: string;
+type PREFECTUREAPIDATA = typeof prefectureApiData;
+type covidState = typeof prefectureData;
+type covidStateData = typeof prefectureData.data;
+type covidStatePrefectureData = typeof prefectureData.data.hokkaido;
+export type covidStatePrefectureDataKeyString = {
+  [key: string]: covidStatePrefectureData;
 };
-type latestDataListType = latestDataState[];
+export type covidStateDataPrefectureCount = typeof prefectureData.data.hokkaido.hospitalize;
 
-type covidState = {
-  currentCategoryFlg: number;
-  currentCategory: categoriesType;
-  currentData: covidDataObject;
-  latestDataList: latestDataListType;
-};
+const initialState: covidState = prefectureData;
 
-const categoriesKeysArray = Object.keys(
-  categoriesObject
-) as (keyof typeof categoriesObject)[];
-
-export const categoriesValuesArray = Object.values(categoriesObject);
-
-const initialState: covidState = {
-  currentCategoryFlg: 1,
-  currentCategory: 'positive-cases',
-  currentData: dataObject,
-  latestDataList: [
-    {
-      eachCategory: 'severe-cases',
-      latestCount: '0',
-    },
-    {
-      eachCategory: 'death-cases',
-      latestCount: '0',
-    },
-    {
-      eachCategory: 'recovery-cases',
-      latestCount: '0',
-    },
-    {
-      eachCategory: 'hospitalization-cases',
-      latestCount: '0',
-    },
-    {
-      eachCategory: 'test-cases',
-      latestCount: '0',
-    },
-  ],
-};
-
-const moldApi = (data: covidDataLatestObject[]): covidDataObject => {
-  let jsonString = JSON.stringify(data);
-  jsonString = jsonString.replace(/"日付":/g, '"date":');
-  jsonString = jsonString.replace(
-    /PCR\s検査陽性者数\(単日\)|重症者数|死亡者数|退院、療養解除となった者|入院治療を要する者|PCR\s検査実施件数\(単日\)/g,
-    'count'
-  );
-  return JSON.parse(jsonString);
-};
-
-export const fetchAsyncGetData = createAsyncThunk(
-  'covid/getData',
-  async (category: categoriesType) => {
-    const { data } = await axios.get<covidDataLatestObject[]>(
-      `${apiUrl}/${category}?apikey=${process.env.REACT_APP_COVID_API_KEY}`
-    );
-    const moldData: covidDataObject = moldApi(data.splice(-14, 14));
-    return { category, data: moldData };
+const plusCovidStateDataPrefectureCount = (
+  object: covidStateDataPrefectureCount,
+  answerType: string
+) => {
+  const retCovidStateDataPrefectureCount = { ...object };
+  switch (answerType) {
+    case '通常':
+      retCovidStateDataPrefectureCount.normal += 1;
+      break;
+    case '制限':
+      retCovidStateDataPrefectureCount.limit += 1;
+      break;
+    case '停止':
+      retCovidStateDataPrefectureCount.stopped += 1;
+      break;
+    case '設置なし':
+      retCovidStateDataPrefectureCount.unanswered += 1;
+      break;
+    case '未回答':
+      retCovidStateDataPrefectureCount.unintroduced += 1;
+      break;
+    default:
+      break;
   }
-);
 
-export const fetchAsyncGetLatestData = createAsyncThunk(
-  'covid/getLatest',
-  async () => {
-    const retStateList: Promise<latestDataState>[] = categoriesKeysArray.map(
-      async (mapCategory: categoriesType) => {
-        const { data } = await axios.get<covidDataLatestObject[]>(
-          `${apiUrl}/${mapCategory}?apikey=${process.env.REACT_APP_COVID_API_KEY}`
-        );
-        const moldData: covidDataObject = moldApi(data.splice(-1, 1));
-        const stateObject: latestDataState = {
-          eachCategory: mapCategory,
-          latestCount: moldData[0].count,
-        };
-        return stateObject;
+  return retCovidStateDataPrefectureCount;
+};
+
+export const fetchAsyncData = createAsyncThunk('covid/getData', async () => {
+  const { data } = await axios.get<PREFECTUREAPIDATA>(`/covid19DailySurvey`);
+  const retCovidState = JSON.parse(JSON.stringify(prefectureData));
+  const dataDate = data[0].submitDate;
+  const setDate = `${dataDate.substr(0, 4)}年${dataDate.substr(
+    5,
+    2
+  )}月${dataDate.substr(8, 2)}日`;
+  retCovidState.date = setDate;
+
+  const retCovidStateData: covidStatePrefectureDataKeyString = JSON.parse(
+    JSON.stringify(prefectureData.data)
+  );
+
+  data.forEach((el) => {
+    Object.keys(retCovidStateData).forEach((key) => {
+      if (retCovidStateData[key].prefectureInfo.name === el.prefName) {
+        switch (el.facilityType) {
+          case '入院':
+            retCovidStateData[
+              key
+            ].hospitalize = plusCovidStateDataPrefectureCount(
+              retCovidStateData[key].hospitalize,
+              el.ansType
+            );
+            break;
+          case '外来':
+            retCovidStateData[
+              key
+            ].outPatient = plusCovidStateDataPrefectureCount(
+              retCovidStateData[key].outPatient,
+              el.ansType
+            );
+            break;
+          case '救急':
+            retCovidStateData[
+              key
+            ].emergency = plusCovidStateDataPrefectureCount(
+              retCovidStateData[key].emergency,
+              el.ansType
+            );
+            break;
+          default:
+            break;
+        }
       }
-    );
-    const stateList = await Promise.all(retStateList);
-    return { stateList };
+    });
+  });
+  retCovidState.data = retCovidStateData as covidStateData;
+
+  return {
+    date: retCovidState.date,
+    data: retCovidState.data,
+  };
+});
+
+export const fetchAsyncCurrentPrefecture = createAsyncThunk(
+  'covid/getCurrentPrefecture',
+  async (prefecture: string) => {
+    const dataObject: covidStatePrefectureDataKeyString = {
+      ...prefectureData.data,
+    };
+    let retPrefecture = '';
+    Object.keys(dataObject).forEach((data) => {
+      if (dataObject[data].prefectureInfo.name === prefecture) {
+        retPrefecture = data;
+      }
+    });
+    return { retPrefecture };
   }
 );
 
@@ -107,37 +120,25 @@ const covidSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchAsyncGetData.fulfilled, (state, action) => {
+    builder.addCase(fetchAsyncData.fulfilled, (state, action) => {
       return {
         ...state,
-        currentCategoryFlg: 1,
-        currentCategory: action.payload.category,
-        currentData: action.payload.data,
+        date: action.payload.date,
+        data: action.payload.data,
       };
     });
-    builder.addCase(fetchAsyncGetLatestData.fulfilled, (state, action) => {
+    builder.addCase(fetchAsyncCurrentPrefecture.fulfilled, (state, action) => {
       return {
         ...state,
-        currentCategoryFlg: 0,
-        latestDataList: action.payload.stateList,
+        currentPrefecture: action.payload.retPrefecture,
       };
     });
   },
 });
 
-export const selectCurrentCategoryFlg: (state: RootState) => number = (state) =>
-  state.covid.currentCategoryFlg;
+export const selectData = (state: RootState): covidState => state.covid;
 
-export const selectCurrentCategory: (state: RootState) => categoriesType = (
-  state
-) => state.covid.currentCategory;
-
-export const selectCurrentData: (state: RootState) => covidDataObject = (
-  state: RootState
-) => state.covid.currentData;
-
-export const selectLatestDataList: (state: RootState) => latestDataListType = (
-  state: RootState
-) => state.covid.latestDataList;
+export const selectCurrentPrefecture = (state: RootState): string =>
+  state.covid.currentPrefecture;
 
 export default covidSlice.reducer;

@@ -2,6 +2,7 @@
   "name": "original-covid-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://opendata.corona.go.jp/api",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@reduxjs/toolkit": "^1.2.5",
@@ -15,6 +16,7 @@
     "@types/react-redux": "^7.1.7",
     "axios": "^0.21.1",
     "firebase": "^8.2.10",
+    "http-proxy-middleware": "^1.1.0",
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",
     "react-countup": "^4.3.3",

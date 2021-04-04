@@ -1,0 +1,18 @@
+[
+  {
+  "facilityId": "11111111",
+  "facilityName": "病院",
+  "zipCode": "〒000-0000",
+  "prefName": "石川県",
+  "facilityAddr": "金沢市桜町00の00",
+  "facilityTel": "1111111111",
+  "latitude": "11.111111",
+  "longitude": "111.111111",
+  "submitDate": "2021-04-02",
+  "facilityType": "入院",
+  "ansType": "通常",
+  "localGovCode": "111111",
+  "cityName": "金沢市",
+  "facilityCode": "1111111111"
+  }
+]

@@ -1,0 +1,1230 @@
+{
+  "date": "2021年3月31日",
+  "currentPrefecture": "tokyo",
+  "data": {
+    "hokkaido": {
+      "prefectureInfo": {
+        "name": "北海道"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "aomori": {
+      "prefectureInfo": {
+        "name": "青森県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "iwate": {
+      "prefectureInfo": {
+        "name": "岩手県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "miyagi": {
+      "prefectureInfo": {
+        "name": "宮城県"
+      },
+
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "akita": {
+      "prefectureInfo": {
+        "name": "秋田県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "yamagata": {
+      "prefectureInfo": {
+        "name": "山形県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "fukushima": {
+      "prefectureInfo": {
+        "name": "福島県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    },
+    "ibaraki": {
+      "prefectureInfo": {
+        "name": "茨城県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "tochigi": {
+      "prefectureInfo": {
+       "name": "栃木県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    },
+    "gunma": {
+      "prefectureInfo": {
+       "name": "群馬県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    },
+    "saitama": {
+      "prefectureInfo": {
+        "name": "埼玉県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "chiba": {
+      "prefectureInfo": {
+        "name": "千葉県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    },
+    "tokyo": {
+      "prefectureInfo": {
+        "name": "東京都"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "kanagawa": {
+      "prefectureInfo": {
+        "name": "神奈川県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "niigata": {
+      "prefectureInfo": {
+        "name": "新潟県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "toyama": {
+      "prefectureInfo": {
+        "name": "富山県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "ishikawa": {
+      "prefectureInfo": {
+        "name": "石川県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "fukui": {
+      "prefectureInfo": {
+        "name": "福井県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "yamanashi": {
+      "prefectureInfo": {
+        "name": "山梨県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    },
+    "nagano": {
+      "prefectureInfo": {
+        "name": "長野県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "gifu": {
+      "prefectureInfo": {
+        "name": "岐阜県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "shizuoka": {
+      "prefectureInfo": {
+        "name": "静岡県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "aichi": {
+      "prefectureInfo": {
+        "name": "愛知県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "mie": {
+      "prefectureInfo": {
+        "name": "三重県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "shiga": {
+      "prefectureInfo": {
+        "name": "滋賀県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "kyoto": {
+      "prefectureInfo": {
+        "name": "京都府"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "osaka": {
+      "prefectureInfo": {
+        "name": "大阪府"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "hyogo": {
+      "prefectureInfo": {
+        "name": "兵庫県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "nara": {
+      "prefectureInfo": {
+        "name": "奈良県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "wakayama": {
+      "prefectureInfo": {
+        "name": "和歌山県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "tottori": {
+      "prefectureInfo": {
+        "name": "鳥取県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "shimane": {
+      "prefectureInfo": {
+        "name": "島根県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "okayama": {
+      "prefectureInfo": {
+        "name": "岡山県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "hiroshima": {
+      "prefectureInfo": {
+        "name": "広島県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "yamaguchi": {
+      "prefectureInfo": {
+        "name": "山口県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "tokushima": {
+      "prefectureInfo": {
+        "name": "徳島県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "kagawa": {
+      "prefectureInfo": {
+        "name": "香川県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "ehime": {
+      "prefectureInfo": {
+        "name": "愛媛県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "kochi": {
+      "prefectureInfo": {
+        "name": "高知県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "fukuoka": {
+      "prefectureInfo": {
+        "name": "福岡県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "saga": {
+      "prefectureInfo": {
+        "name": "佐賀県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "nagasaki": {
+      "prefectureInfo": {
+        "name": "長崎県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "kumamoto": {
+      "prefectureInfo": {
+        "name": "熊本県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "oita": {
+      "prefectureInfo": {
+        "name": "大分県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "miyazaki": {
+      "prefectureInfo": {
+        "name": "宮崎県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "kagoshima": {
+      "prefectureInfo": {
+        "name": "鹿児島県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }, 
+    "okinawa": {
+      "prefectureInfo": {
+        "name": "沖縄県"
+      },
+      "hospitalize": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "outPatient": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      },
+      "emergency": {
+        "normal": 0,
+        "limit": 0,
+        "stopped": 0,
+        "unintroduced": 0,
+        "unanswered": 0
+      }
+    }
+
+  }
+}
