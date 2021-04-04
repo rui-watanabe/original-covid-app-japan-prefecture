@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { NativeSelect, FormControl } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
-import { fetchAsyncGetPrefectureData } from '../covidSlice';
+import { fetchAsyncCurrentPrefecture } from '../covidSlice';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -68,8 +68,9 @@ const SwitchPrefecture: React.FC = () => {
     <FormControl className={classes.formControl}>
       <NativeSelect
         onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
-          dispatch(fetchAsyncGetPrefectureData(e.target.value))
+          dispatch(fetchAsyncCurrentPrefecture(e.target.value))
         }
+        defaultValue="東京都"
       >
         {prefectures.map((prefecture, i) => (
           <option key={i} value={prefecture}>

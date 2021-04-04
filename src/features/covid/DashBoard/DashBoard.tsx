@@ -9,10 +9,7 @@ import {
 } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './DashBoard.module.css';
-import {
-  fetchAsyncGetPrefectureData,
-  selectPrefectureData,
-} from '../covidSlice';
+import { fetchAsyncData, selectData } from '../covidSlice';
 import PieChart from '../PieChart/PieChart';
 import SwitchPrefecture from '../SwitchPrefecture/SwitchPrefecure';
 
@@ -26,22 +23,22 @@ const useStyles = makeStyles(() => ({
 const DashBoard: React.FC = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
-  const data = useSelector(selectPrefectureData);
+  const data = useSelector(selectData);
   const daily = data.date;
 
   useEffect(() => {
-    dispatch(fetchAsyncGetPrefectureData('東京都'));
+    dispatch(fetchAsyncData());
   }, [dispatch]);
 
   return (
     <div>
-      <AppBar position="absolute">
+      <AppBar position="absolute" color="secondary">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            COVID LIVE DASHBOARD JAPAN PREFECTURE
+            全国医療提供体制状況
           </Typography>
           <div>
-            <Typography variant="body1">{daily}</Typography>
+            <Typography variant="body1">{daily}更新</Typography>
           </div>
         </Toolbar>
       </AppBar>
@@ -49,11 +46,11 @@ const DashBoard: React.FC = () => {
         <div className={styles.container}>
           <SwitchPrefecture />
         </div>
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={12}>
+        <Grid container spacing={3} alignItems="center" justify="center">
+          <Grid item xs={12} md={5}>
             <PieChart pieType="hospitalize" />
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={5}>
             <PieChart pieType="outputPatient" />
           </Grid>
           <Grid item xs={12} md={5}>
