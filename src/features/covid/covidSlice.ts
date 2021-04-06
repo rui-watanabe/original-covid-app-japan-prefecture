@@ -44,9 +44,7 @@ const plusCovidStateDataPrefectureCount = (
 };
 
 export const fetchAsyncData = createAsyncThunk('covid/getData', async () => {
-  const { data } = await axios.get<PREFECTUREAPIDATA>(
-    `/api/covid19DailySurvey`
-  );
+  const { data } = await axios.get<PREFECTUREAPIDATA>('http://59.106.222.118');
   const retCovidState = JSON.parse(JSON.stringify(prefectureData));
   const dataDate = data[0].submitDate;
   const setDate = `${dataDate.substr(0, 4)}年${dataDate.substr(
