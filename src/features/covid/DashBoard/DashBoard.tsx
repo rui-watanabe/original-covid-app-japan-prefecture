@@ -9,9 +9,10 @@ import {
 } from '@material-ui/core';
 import { useSelector, useDispatch } from 'react-redux';
 import styles from './DashBoard.module.css';
-import { fetchAsyncData, selectData } from '../covidSlice';
+import { fetchAsyncData, selectData, selectLoading } from '../covidSlice';
 import PieChart from '../PieChart/PieChart';
 import SwitchPrefecture from '../SwitchPrefecture/SwitchPrefecure';
+import Spinner from '../Spinner/Spinner';
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -25,12 +26,15 @@ const DashBoard: React.FC = () => {
   const dispatch = useDispatch();
   const data = useSelector(selectData);
   const daily = data.date;
+  const loading = useSelector(selectLoading);
 
   useEffect(() => {
     dispatch(fetchAsyncData());
   }, [dispatch]);
 
-  return (
+  return loading ? (
+    <Spinner />
+  ) : (
     <div>
       <AppBar position="absolute" color="secondary">
         <Toolbar>

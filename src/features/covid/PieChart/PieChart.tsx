@@ -32,6 +32,13 @@ const PieChart = ({ pieType }: PieChartType): JSX.Element => {
   } else {
     return <></>;
   }
+  const dataTotal =
+    dataObject.normal +
+    dataObject.limit +
+    dataObject.stopped +
+    dataObject.unintroduced +
+    dataObject.unanswered;
+  const normalPercent = Math.round((dataObject.normal / dataTotal) * 100);
 
   const pieChart = (
     <Doughnut
@@ -79,7 +86,7 @@ const PieChart = ({ pieType }: PieChartType): JSX.Element => {
   return (
     <>
       <Typography align="center" color="textSecondary" gutterBottom>
-        {title}患者状況
+        {title}通常率 {normalPercent} [%]
       </Typography>
       {pieChart}
     </>

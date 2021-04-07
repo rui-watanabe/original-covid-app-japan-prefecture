@@ -20,6 +20,6 @@
     "noEmit": true,
     "jsx": "react",
   },
-  "include": ["src/**/*", "src/setupProxy.js"],
+  "include": ["src/**/*", "src/setupProxy.js", "setProxy.js"],
   "exclude": ["./node_modules"]
 }

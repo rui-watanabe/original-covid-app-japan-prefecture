@@ -1,0 +1,15 @@
+.spinnerverRay{
+  position: fixed;
+  -ms-transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.spinnerWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
