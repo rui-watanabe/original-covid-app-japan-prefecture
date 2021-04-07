@@ -44,7 +44,9 @@ const plusCovidStateDataPrefectureCount = (
 };
 
 export const fetchAsyncData = createAsyncThunk('covid/getData', async () => {
-  const { data } = await axios.get<PREFECTUREAPIDATA>('http://59.106.222.118');
+  const { data } = await axios.get<PREFECTUREAPIDATA>(
+    process.env.REACT_APP_API_HOST
+  );
   const retCovidState = JSON.parse(JSON.stringify(prefectureData));
   const dataDate = data[0].submitDate;
   const setDate = `${dataDate.substr(0, 4)}年${dataDate.substr(
@@ -120,9 +122,16 @@ const covidSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
+    builder.addCase(fetchAsyncData.pending, (state) => {
+      return {
+        ...state,
+        isLoading: true,
+      };
+    });
     builder.addCase(fetchAsyncData.fulfilled, (state, action) => {
       return {
         ...state,
+        isLoading: false,
         date: action.payload.date,
         data: action.payload.data,
       };
@@ -140,5 +149,8 @@ export const selectData = (state: RootState): covidState => state.covid;
 
 export const selectCurrentPrefecture = (state: RootState): string =>
   state.covid.currentPrefecture;
+
+export const selectLoading = (state: RootState): boolean =>
+  state.covid.isLoading;
 
 export default covidSlice.reducer;

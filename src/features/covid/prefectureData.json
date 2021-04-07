@@ -1,6 +1,7 @@
 {
   "date": "2021年3月31日",
   "currentPrefecture": "tokyo",
+  "isLoading": false,
   "data": {
     "hokkaido": {
       "prefectureInfo": {
