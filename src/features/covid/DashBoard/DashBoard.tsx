@@ -42,7 +42,7 @@ const DashBoard: React.FC = () => {
             全国医療提供体制状況
           </Typography>
           <div>
-            <Typography variant="body1">{daily}更新</Typography>
+            <Typography variant="body1">{daily}状況</Typography>
           </div>
         </Toolbar>
       </AppBar>
