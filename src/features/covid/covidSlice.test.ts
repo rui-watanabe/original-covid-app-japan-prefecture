@@ -1,3 +1,4 @@
+import { cleanup } from '@testing-library/react';
 import React from 'react';
 import reducer, {
   fetchAsyncData,
@@ -6,6 +7,10 @@ import reducer, {
 } from './covidSlice';
 import initPrefectureData from './prefectureData.json';
 import payloadPrefectureData2 from './prefectureData2.json';
+
+afterEach(() => {
+  cleanup();
+});
 
 describe('covidSlice extraReducers test', () => {
   const initialState: covidState = initPrefectureData.data;
