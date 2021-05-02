@@ -39,4 +39,14 @@ describe('covidSlice extraReducers test', () => {
     expect(state.data.hokkaido.outPatient.normal).toEqual(2);
     expect(state.data.hokkaido.emergency.normal).toEqual(3);
   });
+  it('Should output fetchAsyncCurrentPrefecture new state when fulfilled', () => {
+    const action = {
+      type: fetchAsyncCurrentPrefecture.fulfilled.type,
+      payload: {
+        prefecture: 'hokkaido',
+      },
+    };
+    const state = reducer(initialState, action);
+    expect(state.currentPrefecture).toEqual('hokkaido');
+  });
 });
