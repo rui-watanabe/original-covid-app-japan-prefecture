@@ -1,6 +1,6 @@
 {
   "data": {
-    "date": "2021年4月1日",
+    "date": "2021年3月31日",
     "currentPrefecture": "tokyo",
     "isLoading": false,
     "data": {
@@ -9,21 +9,21 @@
           "name": "北海道"
         },
         "hospitalize": {
-          "normal": 0,
+          "normal": 1,
           "limit": 0,
           "stopped": 0,
           "unintroduced": 0,
           "unanswered": 0
         },
         "outPatient": {
-          "normal": 0,
+          "normal": 2,
           "limit": 0,
           "stopped": 0,
           "unintroduced": 0,
           "unanswered": 0
         },
         "emergency": {
-          "normal": 0,
+          "normal": 3,
           "limit": 0,
           "stopped": 0,
           "unintroduced": 0,
