@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   AppBar,
@@ -26,7 +26,9 @@ const DashBoard: React.FC = () => {
   const dispatch = useDispatch();
   const data = useSelector(selectData);
   const daily = data.date;
-  const loading = useSelector(selectLoading);
+  const [loading, setLoading] = useState(false);
+
+  setLoading(useSelector(selectLoading));
 
   useEffect(() => {
     dispatch(fetchAsyncData());
