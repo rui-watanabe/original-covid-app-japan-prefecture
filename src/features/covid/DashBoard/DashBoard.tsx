@@ -11,7 +11,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import styles from './DashBoard.module.css';
 import { fetchAsyncData, selectData, selectLoading } from '../covidSlice';
 import PieChart from '../PieChart/PieChart';
-import SwitchPrefecture from '../SwitchPrefecture/SwitchPrefecure';
+import SwitchPrefecture from '../SwitchPrefecture/SwitchPrefecture';
 import Spinner from '../Spinner/Spinner';
 
 const useStyles = makeStyles(() => ({

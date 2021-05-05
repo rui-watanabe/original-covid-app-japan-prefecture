@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 const SwitchPrefecture: React.FC = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
-
   const prefecturesObject = prefecturesObjectJSON as prefecturesObjectType;
   return (
     <FormControl className={classes.formControl}>
