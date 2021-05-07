@@ -4,7 +4,7 @@ import { RootState } from '../../app/store';
 import prefectureData from './prefectureData.json';
 
 type prefectureApiData = typeof prefectureData;
-type covidState = typeof prefectureData.data;
+export type covidState = typeof prefectureData.data;
 type covidStatePrefectureData = typeof prefectureData.data.data.hokkaido;
 export type covidStateDataPrefectureCount = typeof prefectureData.data.data.hokkaido.hospitalize;
 export type covidStatePrefectureDataKeyString = {
