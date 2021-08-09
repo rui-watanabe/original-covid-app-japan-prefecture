@@ -1,13 +1,11 @@
-name: React Firebase CI/CD
+name: Pull-Request-Test
 
 on:
-  push:
-    branches: [master]
   pull_request:
     branches: [master]
 
 jobs:
-  build_test_deploy:
+  test:
     runs-on: ubuntu-18.04
     timeout-minutes: 10
 
@@ -31,13 +29,3 @@ jobs:
       - name: Test
         run: |
           yarn test a
-
-      - name: Install Firebase Tools
-        run: |
-          npm install -g firebase-tools
-
-      - name: Deploy
-        env:
-          FIREBASE_TOKEN_PROD: ${{ secrets.FIREBASE_TOKEN_PROD }}
-        run: |
-          firebase deploy --project original-covid-app-prefecture --token $FIREBASE_TOKEN_PROD
