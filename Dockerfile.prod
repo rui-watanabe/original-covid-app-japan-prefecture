@@ -12,6 +12,7 @@ COPY package*.json ${APP_HOME}/
 RUN yarn install
 
 COPY . .
+RUN yarn lintfix
 RUN yarn build
 
 # deploy stage
