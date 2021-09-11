@@ -26,7 +26,9 @@ const DashBoard: React.FC = () => {
   const dispatch = useDispatch();
   const data = useSelector(selectData);
   const daily = data.date;
-  const loading = useSelector(selectLoading);
+  let loading = true;
+  loading = useSelector(selectLoading);
+  console.log(loading);
 
   useEffect(() => {
     dispatch(fetchAsyncData());
