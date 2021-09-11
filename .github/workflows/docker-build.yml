@@ -8,7 +8,7 @@ jobs:
   docker-build:
     runs-on: ubuntu-18.04
     env:
-      DOCKER_IMAGE_NAME: original-covid-app-japan
+      DOCKER_IMAGE_NAME: original-covid-app-japan-frontend
     steps:
       - name: Check out source code
         uses: actions/checkout@v1

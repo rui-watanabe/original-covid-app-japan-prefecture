@@ -13,4 +13,7 @@ module.exports = {
     config.plugins[5].options.moduleFilename = () => "static/css/main.css";
     return config;
   },
+  output: {
+    publicPath: '/',
+  },
 };
